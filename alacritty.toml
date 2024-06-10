@@ -1,0 +1,11 @@
+[font]
+size = 14.0
+
+[font.bold]
+family = "Hack Nerd Font"
+
+[font.italic]
+family = "Hack Nerd Font"
+
+[font.normal]
+family = "Hack Nerd Font"
