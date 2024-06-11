@@ -8,6 +8,8 @@
 
 		packages = with pkgs; [
 			neofetch
+      fzf
+      kitty-themes
       (pkgs.nerdfonts.override { fonts = [ "Hack" "DroidSansMono" ]; })
 		];
 
@@ -20,15 +22,19 @@
       source = ./alacritty.toml;
     };
 
+    file."./.config/kitty/kitty.conf" = {
+      source = ./kitty.conf;
+    };
 
 	};
-
+ 
 	programs.bash = {
 		enable = true;
 		shellAliases = {
 			rebuild = "sudo nixos-rebuild switch";
 			rehome = "home-manager switch";
 		};
+    
 	};
 
 	programs.neovim = {
